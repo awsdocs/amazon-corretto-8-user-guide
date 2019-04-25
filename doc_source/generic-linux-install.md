@@ -21,7 +21,7 @@ This section describes how to install and uninstall Amazon Corretto 8 on a host 
 **Example**  
 
    ```
-   sudo dpkg --install java-1.8.0-amazon-corretto-jdk_8.212.04-1_amd64.deb
+   sudo dpkg --install java-1.8.0-amazon-corretto-jdk_8.212.04-2_amd64.deb
    ```
 
 ### Verify Your Installation<a name="debian-deb-verify"></a>
@@ -37,8 +37,8 @@ Expected output for 8u212:
 
 ```
 openjdk version "1.8.0_212"
-OpenJDK Runtime Environment Corretto-8.212.04.1 (build 1.8.0_212-b04)
-OpenJDK 64-Bit Server VM Corretto-8.212.04.1 (build 25.212-b04, mixed mode)
+OpenJDK Runtime Environment Corretto-8.212.04.2 (build 1.8.0_212-b04)
+OpenJDK 64-Bit Server VM Corretto-8.212.04.2 (build 25.212-b04, mixed mode)
 ```
 
  If you see a version string that doesn't mention `Corretto`, run the following command to change the default `java` or `javac` providers\. 
@@ -76,7 +76,7 @@ sudo dpkg --remove java-1.8.0-amazon-corretto-jdk
 **Example**  
 
    ```
-   sudo yum localinstall java-1.8.0-amazon-corretto-devel-1.8.0_212.b04-1.x86_64.rpm
+   sudo yum localinstall java-1.8.0-amazon-corretto-devel-1.8.0_212.b04-2.x86_64.rpm
    ```
 
 ### Verify Your Installation<a name="rpm-verify"></a>
@@ -92,8 +92,8 @@ This is the expected output for 8u212:
 
 ```
 openjdk version "1.8.0_212"
-OpenJDK Runtime Environment Corretto-8.212.04.1 (build 1.8.0_212-b04)
-OpenJDK 64-Bit Server VM Corretto-8.212.04.1 (build 25.212-b04, mixed mode)
+OpenJDK Runtime Environment Corretto-8.212.04.2 (build 1.8.0_212-b04)
+OpenJDK 64-Bit Server VM Corretto-8.212.04.2 (build 25.212-b04, mixed mode)
 ```
 
  If you see a version string that doesn't mention `Corretto`, run the following command to change the default `java` or `javac` providers\. 

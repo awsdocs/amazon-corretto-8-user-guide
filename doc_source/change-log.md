@@ -2,6 +2,18 @@
 
 The following sections describe the changes for each release of Amazon Corretto 8\.
 
+## Corretto version 8\.212\.04\.2<a name="changes-2019-04-21"></a>
+
+Release Date: Apr 21, 2019
+
+8\.212\.04\.2 improves handling of TrueType fonts \(JDK\-8219066\)\. The following platforms are updated:
+
+**Target Platforms**
++  RPM\-based Linux using glibc 2\.12 or later, x86\_64 
++  Debian\-based Linux using glibc 2\.12 or later, x86\_64 
++  Windows 7 or later, x86, x86\_64 
++  macOS 10\.10 and later, x86\_64 
+
 ## April 2019 critical patch update: Corretto version 8\.212\.04\.1<a name="changes-2019-04-16"></a>
 
 Release Date: Apr 16, 2019
