@@ -1,0 +1,13 @@
+# Document History for User Guide<a name="doc-history"></a>
+
+The following table describes the documentation for this release of Amazon Corretto 8\.
+
+| Change | Description | Date | 
+| --- |--- |--- |
+| [Quaterly Corretto update 8\.212\.04\.1\.](#doc-history) | April 2019 update of security fixes for Corretto 8\. | April 16, 2019 | 
+| [Amazon Corretto 8 is now in GA\.](#doc-history) | No changes have been made from the RC\. | January 31, 2019 | 
+| [8u202: Add links for 8\.202\.08\.2 RC and Amazon Linux 2 8\.202\.08\.1\.](#doc-history) | Updates artifacts and instructions to point to current RC\. | January 25, 2019 | 
+| [8u202 PSU releases: Corretto version 8\.202\.08\.1](#doc-history) | Updates Amazon Corretto 8 to 8u202\. | January 23, 2019 | 
+| [New Platform Release \(1\.8\.0\_192\)](#doc-history) | Bug fix release of Amazon Corretto 8 Developer Preview\. | January 14, 2019 | 
+| [Bug fix Release \(1\.8\.0\_192\)](#doc-history) | Bug fix release of Amazon Corretto 8 Developer Preview\. | December 17, 2018 | 
+| [Initial Release \(1\.8\.0\_192\)](#doc-history) | Initial release of Amazon Corretto 8 Developer Preview\. | November 14, 2018 | 
