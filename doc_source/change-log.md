@@ -2,6 +2,23 @@
 
 The following sections describe the changes for each release of Amazon Corretto 8\.
 
+## Corretto version 8\.212\.04\.2 for Amazon Linux 2<a name="changes-2019-05-02"></a>
+
+Release Date: May 02, 2019
+
+ The following platforms are updated in this release\. 
+
+**Target Platforms**
++  Amazon Linux 2, x64 and aarch64\. 
+
+The following issues and enhancements are addressed in 8\.212\.04\.2\.
+
+
+| Issue Name | Platform | Description | Link | 
+| --- | --- | --- | --- | 
+|  Update Corretto to 8\.212\.04\.2\.  |  All  |  Update Corretto 8 patch set to 8\.212\.04\.2\.  |   | 
+|  Backport JDK\-8048782: OpenJDK: PiscesCache : xmax/ymax rounding up can cause RasterFormatException  |  All  |  This patch fixes issue where sun\.java2d\.pisces\.PiscesCache constructor that accepts min/max x and y arguments \- the internal 'bboxX1' and 'bboxY1' are set to values one greater than given maximum X and Y values\. This effectively causes an "off by 1" error\.  |  [corretto\-8\#94](https://github.com/corretto/corretto-8/issues/94)  | 
+
 ## Corretto version 8\.212\.04\.2<a name="changes-2019-04-21"></a>
 
 Release Date: Apr 21, 2019
