@@ -1,4 +1,4 @@
-# Amazon Corretto 8 Corretto 8 User Guide
+# Amazon Corretto Corretto 8 User Guide
 
 -----
 *****Copyright &copy; 2019 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
