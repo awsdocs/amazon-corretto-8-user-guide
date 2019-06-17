@@ -2,6 +2,26 @@
 
 The following sections describe the changes for each release of Amazon Corretto 8\.
 
+## New platform releases: Version 1\.8\.0\_212\-amazon\-corretto for aarch64 preview<a name="changes-2019-06-14"></a>
+
+Release Date: June 14, 2019
+
+The following new platforms are supported\.
+
+**New Platforms**
++  RPM\-based Linux using glibc 2\.17 or later, **aarch64** 
++  Debian\-based Linux using glibc 2\.17 or later, **aarch64** 
+
+The following issues and enhancements are addressed in 8\.212\.04\.03
+
+
+| Issue Name | Platform | Description | Link | 
+| --- | --- | --- | --- | 
+|  Update Corretto to 8\.212\.04\.3\.  |  aarch64  |  Update aarch64 backend\. Update Corretto 8 patch set to 8\.212\.04\.3\.  |   | 
+|  Backport JDK\-8219006: AArch64: Register corruption in slow subtype check  |  aarch64  |  This patch fixes the intrinsic arraycopy in debug build\. The compiled method of System\.arraycopy crashed due to register corrruption\.  |   | 
+|  Backport JDK\-8224671: AArch64: mauve System\.arraycopy test failure  |  aarch64  |  This patch fixes the intrinsic arraycopy\. The instruction eonw in the codestub arraycopy was encoded with the wrong operand register zr\.  |   | 
+|  Backport JDK\-8155627: Enable SA on AArch64  |  aarch64  |  This patch puts sa\-jdi\.jar into the JDK image\. developer tools such as hsdb depends on it\.  |   | 
+
 ## Corretto version 8\.212\.04\.2 for Amazon Linux 2<a name="changes-2019-05-02"></a>
 
 Release Date: May 02, 2019

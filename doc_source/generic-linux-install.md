@@ -10,14 +10,14 @@ This section describes how to install and uninstall Amazon Corretto 8 on a host 
 
 ### Download and Install the Debian Package Manually<a name="debian-deb-install-instruct"></a>
 
-1.  Download the Linux x64 `.deb` file from the [Downloads](downloads-list.md) page\. Before you install the JDK, install the `java-common` package\.   
+1.  Download the Linux `.deb` file from the [Downloads](downloads-list.md) page\. Before you install the JDK, install the `java-common` package\.   
 **Example**  
 
    ```
    sudo apt-get update && sudo apt-get install java-common
    ```
 
-1.  Install the `.deb` file by using `sudo dpkg --install`\.   
+1.  Install the `.deb` file by using `dpkg --install`\. e\.g\. install x86\_64 deb using the following command:  
 **Example**  
 
    ```
@@ -33,12 +33,12 @@ This section describes how to install and uninstall Amazon Corretto 8 on a host 
 ```
 java -version
 ```
-Expected output for 8u212:   
+For example, expected output for Corretto\-8\.212\.04\.3:   
 
 ```
 openjdk version "1.8.0_212"
-OpenJDK Runtime Environment Corretto-8.212.04.2 (build 1.8.0_212-b04)
-OpenJDK 64-Bit Server VM Corretto-8.212.04.2 (build 25.212-b04, mixed mode)
+OpenJDK Runtime Environment Corretto-8.212.04.3 (build 1.8.0_212-b04)
+OpenJDK 64-Bit Server VM Corretto-8.212.04.3 (build 25.212-b04, mixed mode)
 ```
 
  If you see a version string that doesn't mention `Corretto`, run the following command to change the default `java` or `javac` providers\. 
@@ -70,9 +70,9 @@ sudo dpkg --remove java-1.8.0-amazon-corretto-jdk
 
 ### Download and install RPM package manually<a name="rpm-install-instruct"></a>
 
-1.  Download the Linux x64 `.rpm` file from the [Downloads](downloads-list.md) page\. 
+1.  Download the Linux `.rpm` file from the [Downloads](downloads-list.md) page\. 
 
-1.  Install the downloaded `.rpm` file using `yum localinstall`\.   
+1.  Install the downloaded `.rpm` file using `yum localinstall`\. e\.g\. install x86\_64 rpm using the following command:   
 **Example**  
 
    ```
@@ -88,12 +88,12 @@ sudo dpkg --remove java-1.8.0-amazon-corretto-jdk
 ```
 java -version
 ```
-This is the expected output for 8u212:   
+For example, expected output for Corretto\-8\.212\.04\.3:   
 
 ```
 openjdk version "1.8.0_212"
-OpenJDK Runtime Environment Corretto-8.212.04.2 (build 1.8.0_212-b04)
-OpenJDK 64-Bit Server VM Corretto-8.212.04.2 (build 25.212-b04, mixed mode)
+OpenJDK Runtime Environment Corretto-8.212.04.3 (build 1.8.0_212-b04)
+OpenJDK 64-Bit Server VM Corretto-8.212.04.3 (build 25.212-b04, mixed mode)
 ```
 
  If you see a version string that doesn't mention `Corretto`, run the following command to change the default `java` or `javac` providers\. 
