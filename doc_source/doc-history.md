@@ -4,6 +4,9 @@ The following table describes the documentation for this release of Amazon Corre
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Quarterly Corretto update 8\.222\.10\.1\.](#doc-history) | July 2019 update of security fixes for Corretto 8\. | July 16, 2019 | 
+| [Corretto version 8\.222\.10\.3\.](#doc-history) | corretto\-8 release for Windows\. | July 16, 2019 | 
+| [Corretto version 8\.222\.10\.2\.](#doc-history) | corretto\-8 preview 2 for aarch64\. | July 16, 2019 | 
 | [Corretto version 8\.212\.04\.3\.](#doc-history) | corretto\-8 preview for aarch64\. | June 14, 2019 | 
 | [Corretto version 8\.212\.04\.2\.](#doc-history) | 8\.212\.04\.2 released for Amazon Linux 2\. | May 2, 2019 | 
 | [Corretto version 8\.212\.04\.2\.](#doc-history) | Improves handling of TrueType fonts \(JDK\-8219066\)\. | April 21, 2019 | 

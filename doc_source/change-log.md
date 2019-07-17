@@ -2,7 +2,66 @@
 
 The following sections describe the changes for each release of Amazon Corretto 8\.
 
-## New platform releases: Version 1\.8\.0\_212\-amazon\-corretto for aarch64 preview<a name="changes-2019-06-14"></a>
+## Corretto version 8\.222\.10\.3<a name="changes-2019-07-16-3"></a>
+
+Release Date: July 16, 2019
+
+The following platforms are updated in this release\.
+
+**Target Platforms**
++  Windows 7 or later, x86, x86\_64 
+
+The following issue is addressed in 8\.222\.10\.3\.
+
+
+| Issue Name | Platform | Description | Link | 
+| --- | --- | --- | --- | 
+|  The `java.vm.vendor` property is incorrect in Corretto 8\.222\.10\.1 Windows build\.  |  Windows  |  The `java.vm.vendor` property should have the value "Amazon\.com Inc\."\.  |   | 
+
+## Corretto version 8\.222\.10\.2 for aarch64 preview<a name="changes-2019-07-16-2"></a>
+
+Release Date: July 16, 2019
+
+The following platforms are updated in this release\.
+
+**Target Platforms**
++  RPM\-based Linux using glibc 2\.17 or later, aarch64 
++  Debian\-based Linux using glibc 2\.17 or later, aarch64 
+
+The following enhancement is addressed in 8\.222\.10\.2\.
+
+
+| Issue Name | Platform | Description | Link | 
+| --- | --- | --- | --- | 
+|  Update Corretto to 8\.222\.10\.2\.  |  aarch64  |  Update aarch64 backend\. Update Corretto 8 patch set to 8\.222\.10\.2\.  |   | 
+
+## July 2019 critical patch update: Corretto version 8\.222\.10\.1<a name="changes-2019-07-16"></a>
+
+Release Date: July 16, 2019
+
+The following platforms are updated in this release\.
+
+**Target Platforms**
++  RPM\-based Linux using glibc 2\.12 or later, x86\_64 
++  Debian\-based Linux using glibc 2\.12 or later, x86\_64 
++  macOS 10\.10 and later, x86\_64 
+
+The following issues and enhancements are addressed in 8\.222\.10\.1\.
+
+
+| Issue Name | Platform | Description | Link | 
+| --- | --- | --- | --- | 
+|  Update Corretto to 8\.222\.10\.1  |  All  |  Update Corretto 8 patch set to 8\.222\.10\.1\. Update the security baseline to OpenJDK 8u222\.  |   | 
+|  `JAVA_HOME/PATH` and empty folder remains after uninstall Corretto x86 and x64  |  Windows  |  When uninstalling Corretto on Windows, the `JAVA_HOME` and `PATH` environment variable remains, and the installed directory remains empty\.  |  [corretto\-8\#38](https://github.com/corretto/corretto-8/issues/38)  | 
+|  javafx\_font\.dll Error when executing JavaFX tests  |  Windows  |  The Corretto JVM crashes when executing JavaFX tests using the Surefire plugin\.  |  [corretto\-8\#49](https://github.com/corretto/corretto-8/issues/49)  | 
+|  Windows MSI in unbranded and doesn't show what version I'm installing  |  Windows, macOS  |  When installing on Windows or MacOS using the Corretto installers, the installer does not tell the Corretto version to be installed\.  |  [corretto\-8\#112](https://github.com/corretto/corretto-8/issues/112)  | 
+|  Windows UAC popup is cryptic and unbranded  |  Windows  |  When using Corretto Windows MSI installer, the ﻿UAC popup Window﻿ is unbranded and doesn't tell the users what they are approving\.  |  [corretto\-8\#113](https://github.com/corretto/corretto-8/issues/113)  | 
+|  MSI upgrade does not remove old version  |  Windows  |  Corretto MSI should remove old artifacts when installing a newer version\.  |  [corretto\-8\#115](https://github.com/corretto/corretto-8/issues/115)  | 
+|  Windows binaries don't include MS Visual Studio 2017 redistributables needed for OpenJFX  |  Windows  |  Missing of VS runtime dll causes QuantumRenderer failed to be initialized\.  |  [corretto\-8\#116](https://github.com/corretto/corretto-8/issues/116)  | 
+|  JDK MSI Installer Registry Keys  |  Windows  |  Applications using Corretto JRE fail to launch if they depend on the Windows registry keys to check the Java version\.  |  [corretto\-8\#122](https://github.com/corretto/corretto-8/issues/122)  | 
+|  msvcr120\.dll is missing in the final JRE distribution for Windows  |  Windows  |   |  [corretto\-8\#131](https://github.com/corretto/corretto-8/issues/131)  | 
+
+## New platform releases: Version 8\.212\.04\.3 for aarch64 preview<a name="changes-2019-06-14"></a>
 
 Release Date: June 14, 2019
 
@@ -18,7 +77,7 @@ The following issues and enhancements are addressed in 8\.212\.04\.03
 | Issue Name | Platform | Description | Link | 
 | --- | --- | --- | --- | 
 |  Update Corretto to 8\.212\.04\.3\.  |  aarch64  |  Update aarch64 backend\. Update Corretto 8 patch set to 8\.212\.04\.3\.  |   | 
-|  Backport JDK\-8219006: AArch64: Register corruption in slow subtype check  |  aarch64  |  This patch fixes the intrinsic arraycopy in debug build\. The compiled method of System\.arraycopy crashed due to register corrruption\.  |   | 
+|  Backport JDK\-8219006: AArch64: Register corruption in slow subtype check  |  aarch64  |  This patch fixes the intrinsic arraycopy in debug build\. The compiled method of System\.arraycopy crashed due to register corruption\.  |   | 
 |  Backport JDK\-8224671: AArch64: mauve System\.arraycopy test failure  |  aarch64  |  This patch fixes the intrinsic arraycopy\. The instruction eonw in the codestub arraycopy was encoded with the wrong operand register zr\.  |   | 
 |  Backport JDK\-8155627: Enable SA on AArch64  |  aarch64  |  This patch puts sa\-jdi\.jar into the JDK image\. developer tools such as hsdb depends on it\.  |   | 
 
@@ -175,7 +234,7 @@ Release Date: Dec 17, 2018
 | --- | --- | --- | --- | 
 |  libfreetype\.dylib is incorrectly packaged  |  macOS  |  The libfontmanager in Corretto is linked to the libfreetype in X11 and breaks when X11 is not installed\.  |  [corretto\-8\#6﻿](https://github.com/corretto/corretto-8/issues/6﻿)  | 
 |  Eclipse and Eclipse\-installer fail to run when using Amazon Corretto 8  |  macOS  |  The libjli\.dylib under `amazon-corretto-8.jdk/Contents/MacOS` should be a symlink to `../Home/jre/lib/jli/libjli.dylib` but was dereferenced\. This causes the native JVM invoker in Ecplise failed to locate the JRE\.  |  [corretto\-8\#18](https://github.com/corretto/corretto-8/issues/18)  | 
-|  Enhance Installer to add standard registry keys on Windows for compat  |  Windows  |  Enhance the Windows installer to add registry keys for Corretto during the installation process\.  |  [corretto\-8\#14](https://github.com/corretto/corretto-8/issues/14)  | 
+|  Enhance Installer to add standard registry keys on Windows for compact  |  Windows  |  Enhance the Windows installer to add registry keys for Corretto during the installation process\.  |  [corretto\-8\#14](https://github.com/corretto/corretto-8/issues/14)  | 
 |  Allow JAVA\_HOME and PATH to be configured from installer  |  Windows  |  Enhance the Windows installer to add `JAVA_HOME` environment variable and also update the `PATH` environment variable with the Corretto installation location\.  |  [corretto\-8\#15](https://github.com/corretto/corretto-8/issues/15)  | 
 |  Support Windows 32bit binaries  |  Windows  |  Provide certified build for Windows 32bit OS\.  |  [corretto\-8\#22](https://github.com/corretto/corretto-8/issues/22)  | 
 
