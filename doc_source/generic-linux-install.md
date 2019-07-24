@@ -88,7 +88,7 @@ sudo dpkg --remove java-1.8.0-amazon-corretto-jdk
 ```
 java -version
 ```
-For example, expected output for Corretto\-8\.222\.10\.2:   
+For example, expected output for Corretto\-8\.222\.10\.1:   
 
 ```
 openjdk version "1.8.0_222"

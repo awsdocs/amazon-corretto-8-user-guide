@@ -17,9 +17,9 @@ docker run amazoncorretto:8 java -version
 **Example**  
 
 ```
-openjdk version "1.8.0_212"
-OpenJDK Runtime Environment Corretto-8.212.04.2 (build 1.8.0_212-b04)
-OpenJDK 64-Bit Server VM Corretto-8.212.04.2 (build 25.212-b04, mixed mode)
+openjdk version "1.8.0_222"
+OpenJDK Runtime Environment Corretto-8.222.10.1 (build 1.8.0_222-b10)
+OpenJDK 64-Bit Server VM Corretto-8.222.10.1 (build 25.222-b10, mixed mode)
 ```
 
 ## Build a Docker Image with Amazon Corretto 8<a name="docker-build-instruct"></a>

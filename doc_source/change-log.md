@@ -61,6 +61,20 @@ The following issues and enhancements are addressed in 8\.222\.10\.1\.
 |  JDK MSI Installer Registry Keys  |  Windows  |  Applications using Corretto JRE fail to launch if they depend on the Windows registry keys to check the Java version\.  |  [corretto\-8\#122](https://github.com/corretto/corretto-8/issues/122)  | 
 |  msvcr120\.dll is missing in the final JRE distribution for Windows  |  Windows  |   |  [corretto\-8\#131](https://github.com/corretto/corretto-8/issues/131)  | 
 
+The following CVEs are addressed in 8\.222\.10\.1\.
+
+
+| CVE \# | Component Affected | 
+| --- | --- | 
+|  CVE\-2019\-7317  |  AWT \(libpng\)  | 
+|  CVE\-2019\-2842  |  JCE  | 
+|  CVE\-2019\-2766  |  Networking  | 
+|  CVE\-2019\-2816  |  Networking  | 
+|  CVE\-2019\-2745  |  Security  | 
+|  CVE\-2019\-2786  |  Security  | 
+|  CVE\-2019\-2762  |  Utilities  | 
+|  CVE\-2019\-2769  |  Utilities  | 
+
 ## New platform releases: Version 8\.212\.04\.3 for aarch64 preview<a name="changes-2019-06-14"></a>
 
 Release Date: June 14, 2019
