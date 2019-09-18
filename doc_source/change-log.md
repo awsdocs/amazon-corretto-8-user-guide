@@ -2,6 +2,23 @@
 
 The following sections describe the changes for each release of Amazon Corretto 8\.
 
+## GA release: 8\.222\.10\.4: Amazon Corretto 8<a name="changes-2019-09-17"></a>
+
+Release Date: Sept 17, 2019
+
+ The following platforms are updated in this release\. 
+
+**Target Platforms**
++  RPM\-based Linux using glibc 2\.17 or later, aarch64 
++  Debian\-based Linux using glibc 2\.17 or later, aarch64 
+
+The following issues and enhancements are addressed in 8\.222\.10\.4\.
+
+
+| Issue Name | Platform | Description | Link | 
+| --- | --- | --- | --- | 
+|  Update Corretto 8\.222\.10\.4 RC to 8\.222\.10\.4 GA\.  |  aarch64  |  Amazon Corretto 8\.222\.10\.4 for aarch64 is now GA\.  |   | 
+
 ## Corretto version 8\.222\.10\.2 for Amazon Linux 2 Release Candidate<a name="changes-2019-09-04"></a>
 
 Release Date: September 04, 2019
