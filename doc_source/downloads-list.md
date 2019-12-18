@@ -30,7 +30,7 @@ These links can be used in scripts to pull the latest version of Amazon Corretto
 
 ## Signature Verification<a name="signature"></a>
 
-The public key to verify the SIGNATURE file can be downloaded: [Windows and Linux](https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/F6C9FC19.pub) and [MacOS](https://d3pxv6yz143wms.cloudfront.net/8.232.09.2/C44F4D36.pub)\.
+The public key to verify the SIGNATURE file can be downloaded: [Windows and Linux](https://corretto.aws/downloads/resources/8.232.09.1/F6C9FC19.pub) and [MacOS](https://corretto.aws/downloads/resources/8.232.09.2/C44F4D36.pub)\.
 
 ## Release History<a name="release-history"></a>
 
