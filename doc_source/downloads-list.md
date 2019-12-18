@@ -2,10 +2,36 @@
 
 This topic lists all the downloads available for Amazon Corretto 8\. Use the link for the appropriate platform of your environment\.
 
-## Amazon Corretto 8<a name="download"></a>
+## Using Permanent URLs<a name="amazon-corretto-yum-urls"></a>
+
+Permanent URLs are hosted at *corretto\.aws* and always point to the most recent release of a package\. These links can be used in scripts to pull the latest version of Amazon Corretto 8 \(version 8u232 \)\. For example, to retrieve the latest Linux Corretto 8 \.tgz package by using a Permanent URL, run the following command from the CLI:
+
+**Example**  
+
+```
+sh#curl https://corretto.aws/downloads/latest/amazon-corretto-8-aarch64-linux-jdk.tar.gz
+```
+
+These links can be used in scripts to pull the latest version of Amazon Corretto 8\.
+
+[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html)
+
+**Note**: Notice that the above links follow this format:
+
+**Example**  
+
+```
+            https://corretto.aws/[latest/latest_checksum]/amazon-corretto-[corretto_version]-[cpu_arch]-[os]-[package_type].[file_extension]
+```
+
+## Amazon Corretto 8 Versioned download links<a name="download"></a>
 
 [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html)
 
 ## Signature Verification<a name="signature"></a>
 
-The public key to verify the SIGNATURE file can be downloaded: [x86\_64](https://d3pxv6yz143wms.cloudfront.net/8.222.10.1/B540D62A.pub) and [aarch64](https://d3pxv6yz143wms.cloudfront.net/8.222.10.4/1A158134.pub)\.
+The public key to verify the SIGNATURE file can be downloaded: [Windows and Linux](https://d3pxv6yz143wms.cloudfront.net/8.232.09.1/F6C9FC19.pub) and [MacOS](https://d3pxv6yz143wms.cloudfront.net/8.232.09.2/C44F4D36.pub)\.
+
+## Release History<a name="release-history"></a>
+
+For earlier versions, see [Corretto\-8 Releases](https://github.com/corretto/corretto-8/releases) on GitHub\.
