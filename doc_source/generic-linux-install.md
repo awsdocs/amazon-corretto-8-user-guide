@@ -8,6 +8,25 @@ If you need to install Amazon Corretto 8 on Amazon Linux 2, see [Installing on A
 
 This section describes how to install and uninstall Amazon Corretto 8 on a host or container running a Debian\-based operating system\.
 
+### Using apt\.corretto\.aws<a name="amazon-corretto-yum-verify"></a>
+
+To use the Corretto Apt repositories on Debian\-based systems, such as Ubuntu, import the Corretto public key and then add the repository to the system list by using the following commands: 
+
+**Example**  
+
+```
+ wget -O- https://apt.corretto.aws/corretto.key | sudo apt-key add - 
+ sudo add-apt-repository 'deb https://apt.corretto.aws stable main'
+```
+
+After the repository is added, you can install Corretto 8 by running this command:
+
+**Example**  
+
+```
+ sudo apt-get update; sudo apt-get install -y java-1.8.0-amazon-corretto-jdk
+```
+
 ### Download and Install the Debian Package Manually<a name="debian-deb-install-instruct"></a>
 
 1.  Download the Linux `.deb` file from the [Downloads](downloads-list.md) page\. Before you install the JDK, install the `java-common` package\.   
@@ -21,7 +40,7 @@ This section describes how to install and uninstall Amazon Corretto 8 on a host 
 **Example**  
 
    ```
-   sudo dpkg --install java-1.8.0-amazon-corretto-jdk_8.222.10-1_amd64.deb
+   sudo dpkg --install java-1.8.0-amazon-corretto-jdk_8.232.09-1_amd64.deb
    ```
 
 ### Verify Your Installation<a name="debian-deb-verify"></a>
@@ -33,12 +52,12 @@ This section describes how to install and uninstall Amazon Corretto 8 on a host 
 ```
 java -version
 ```
-For example, expected output for Corretto\-8\.222\.10\.1:   
+For example, expected output for Corretto\-8\.232\.09\.1:   
 
 ```
-openjdk version "1.8.0_222"
-OpenJDK Runtime Environment Corretto-8.222.10.1 (build 1.8.0_222-b10)
-OpenJDK 64-Bit Server VM Corretto-8.222.10.1 (build 25.222-b10, mixed mode)
+openjdk version "1.8.0_232"
+OpenJDK Runtime Environment Corretto-8.232.09.1 (build 1.8.0_232-b09)
+OpenJDK 64-Bit Server VM Corretto-8.232.09.1 (build 25.232-b09, mixed mode)
 ```
 
  If you see a version string that doesn't mention `Corretto`, run the following command to change the default `java` or `javac` providers\. 
@@ -68,6 +87,25 @@ sudo dpkg --remove java-1.8.0-amazon-corretto-jdk
 
 ## Install Amazon Corretto 8 on RPM\-Based Linux<a name="rpm-linux-install-instruct"></a>
 
+### Using yum\.corretto\.aws<a name="amazon-corretto-yum-install-instruct"></a>
+
+To use the Corretto yum repositories on RPM\-based systems, such as Amazon Linux AMI, you need to import the Corretto public key and then add the repository to the system list\. For most systems, you must run the following commands:
+
+**Example**  
+
+```
+ sudo rpm --import https://yum.corretto.aws/corretto.key 
+ sudo curl -L -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo
+```
+
+After the repository is added, you can install Corretto 8 by running this command:
+
+**Example**  
+
+```
+sudo yum update; sudo yum install -y java-1.8.0-amazon-corretto-devel
+```
+
 ### Download and install RPM package manually<a name="rpm-install-instruct"></a>
 
 1.  Download the Linux `.rpm` file from the [Downloads](downloads-list.md) page\. 
@@ -76,7 +114,7 @@ sudo dpkg --remove java-1.8.0-amazon-corretto-jdk
 **Example**  
 
    ```
-   sudo yum localinstall java-1.8.0-amazon-corretto-devel-1.8.0_222.b10-1.x86_64.rpm
+   sudo yum localinstall java-1.8.0-amazon-corretto-devel-1.8.0_232.b09-1.x86_64.rpm
    ```
 
 ### Verify Your Installation<a name="rpm-verify"></a>
@@ -88,12 +126,12 @@ sudo dpkg --remove java-1.8.0-amazon-corretto-jdk
 ```
 java -version
 ```
-For example, expected output for Corretto\-8\.222\.10\.1:   
+For example, expected output for Corretto\-8\.232\.09\.1:   
 
 ```
-openjdk version "1.8.0_222"
-OpenJDK Runtime Environment Corretto-8.222.10.1 (build 1.8.0_222-b10)
-OpenJDK 64-Bit Server VM Corretto-8.222.10.1 (build 25.222-b10, mixed mode)
+openjdk version "1.8.0_232"
+OpenJDK Runtime Environment Corretto-8.232.09.1 (build 1.8.0_232-b09)
+OpenJDK 64-Bit Server VM Corretto-8.232.09.1 (build 25.232-b09, mixed mode)
 ```
 
  If you see a version string that doesn't mention `Corretto`, run the following command to change the default `java` or `javac` providers\. 
