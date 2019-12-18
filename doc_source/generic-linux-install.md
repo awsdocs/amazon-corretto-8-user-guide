@@ -8,7 +8,7 @@ If you need to install Amazon Corretto 8 on Amazon Linux 2, see [Installing on A
 
 This section describes how to install and uninstall Amazon Corretto 8 on a host or container running a Debian\-based operating system\.
 
-### Using apt\.corretto\.aws<a name="amazon-corretto-yum-verify"></a>
+### Using apt<a name="amazon-corretto-yum-verify"></a>
 
 To use the Corretto Apt repositories on Debian\-based systems, such as Ubuntu, import the Corretto public key and then add the repository to the system list by using the following commands: 
 
@@ -87,9 +87,9 @@ sudo dpkg --remove java-1.8.0-amazon-corretto-jdk
 
 ## Install Amazon Corretto 8 on RPM\-Based Linux<a name="rpm-linux-install-instruct"></a>
 
-### Using yum\.corretto\.aws<a name="amazon-corretto-yum-install-instruct"></a>
+### Using yum<a name="amazon-corretto-yum-install-instruct"></a>
 
-To use the Corretto yum repositories on RPM\-based systems, such as Amazon Linux AMI, you need to import the Corretto public key and then add the repository to the system list\. For most systems, you must run the following commands:
+To use Corretto RPM repositories with the yum package manager \(such as Amazon Linux AMI\), import the Corretto public key and then add the repository to the system list\. For most systems, you must run the following commands:
 
 **Example**  
 
@@ -103,7 +103,25 @@ After the repository is added, you can install Corretto 8 by running this comman
 **Example**  
 
 ```
-sudo yum update; sudo yum install -y java-1.8.0-amazon-corretto-devel
+sudo yum install -y java-1.8.0-amazon-corretto-devel
+```
+
+### Using zypper<a name="w4aab9b9b9b5"></a>
+
+To use Corretto RPM repositories with the zyppr package manager \(such as openSUSE\), import the Corretto public key and then add the repository to the system list by running the following commands: 
+
+**Example**  
+
+```
+sudo zypper addrepo https://yum.corretto.aws/corretto.repo; sudo zypper refresh
+```
+
+After the repository is added, you can install Corretto 8 by running this command: 
+
+**Example**  
+
+```
+sudo zypper install java-1.8.0-amazon-corretto-devel
 ```
 
 ### Download and install RPM package manually<a name="rpm-install-instruct"></a>
