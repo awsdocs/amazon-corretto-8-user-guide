@@ -17,9 +17,20 @@ docker run amazoncorretto:8 java -version
 **Example**  
 
 ```
-openjdk version "1.8.0_222"
-OpenJDK Runtime Environment Corretto-8.222.10.1 (build 1.8.0_222-b10)
-OpenJDK 64-Bit Server VM Corretto-8.222.10.1 (build 25.222-b10, mixed mode)
+openjdk version "1.8.0_232"
+OpenJDK Runtime Environment Corretto-8.232.09.1 (build 1.8.0_232-b09)
+OpenJDK 64-Bit Server VM Corretto-8.232.09.1 (build 25.232-b09, mixed mode)
+```
+
+## Using the Corretto ECR Instance<a name="amazon-corretto-yum-erc"></a>
+
+To use the Corretto ECR instance, first authenticate the docker client to the Corretto registry \( registry id : 489478819445\) with the help of the instructions in this [page](https://aws.amazon.com/blogs/compute/authenticating-amazon-ecr-repositories-for-docker-cli-with-credential-helper/)\. 
+
+**Example**  
+
+```
+ docker pull 489478819445.dkr.ecr.us-west-2.amazonaws.com/corretto11:latest 
+ docker run -it 489478819445.dkr.ecr.us-west-2.amazonaws.com/corretto11:latest /bin/bash
 ```
 
 ## Build a Docker Image with Amazon Corretto 8<a name="docker-build-instruct"></a>
@@ -48,7 +59,7 @@ docker run -it amazon-corretto-8
 
  You can create a new Docker image using [Corretto's official Docker Hub image](https://hub.docker.com/_/amazoncorretto)\. 
 
-1.  Create a Dockerfile with the following content\.   
+1.  Create a Docker file with this content\.   
 **Example**  
 
    ```
