@@ -9,7 +9,7 @@ Permanent URLs are hosted at *corretto\.aws* and always point to the most recent
 **Example**  
 
 ```
-sh#curl https://corretto.aws/downloads/latest/amazon-corretto-8-aarch64-linux-jdk.tar.gz
+sh#wget https://corretto.aws/downloads/latest/amazon-corretto-8-aarch64-linux-jdk.tar.gz
 ```
 
 These links can be used in scripts to pull the latest version of Amazon Corretto 8\.
