@@ -4,6 +4,9 @@ The following table describes the documentation for this release of Amazon Corre
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Added YUM and APT repositories topic](#doc-history) | Added information about using YUM and APT repositories \. | December 18, 2019 | 
+| [Corretto version 8\.232\.09\.2\.](#doc-history) | corretto\-8 bug fix release for MacOS\. | November 20, 2019 | 
+| [Quarterly Corretto update 8\.232\.09\.1\.](#doc-history) | October 2019 update of security fixes for Corretto 8\. | October 15, 2019 | 
 | [Corretto version 8\.222\.10\.2\.](#doc-history) | corretto\-8 release candidate for Amazon Linux 2 | September 4, 2019 | 
 | [Corretto version 8\.222\.10\.4\.](#doc-history) | corretto\-8 release candidate for aarch64 | July 26, 2019 | 
 | [Quarterly Corretto update 8\.222\.10\.1\.](#doc-history) | July 2019 update of security fixes for Corretto 8\. | July 16, 2019 | 
