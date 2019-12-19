@@ -29,8 +29,8 @@ To use the Corretto ECR instance, first authenticate the docker client to the Co
 **Example**  
 
 ```
- docker pull 489478819445.dkr.ecr.us-west-2.amazonaws.com/corretto11:latest 
- docker run -it 489478819445.dkr.ecr.us-west-2.amazonaws.com/corretto11:latest /bin/bash
+ docker pull 489478819445.dkr.ecr.us-west-2.amazonaws.com/corretto8:latest 
+ docker run -it 489478819445.dkr.ecr.us-west-2.amazonaws.com/corretto8:latest /bin/bash
 ```
 
 ## Build a Docker Image with Amazon Corretto 8<a name="docker-build-instruct"></a>
