@@ -1,10 +1,10 @@
 # Downloads for Amazon Corretto 8<a name="downloads-list"></a>
 
-This topic lists all the downloads available for Amazon Corretto 8\. Use the link for the appropriate platform of your environment\.
+This topic lists all the downloads available for Amazon Corretto 8\. You can choose Permanent URLs pointing to the latest version, or use Version Specific URLs which point to a specific version \.
 
-## Using Permanent URLs<a name="amazon-corretto-yum-urls"></a>
+## Amazon Corretto 8 Permanent URLs<a name="amazon-corretto-yum-urls"></a>
 
-Permanent URLs are hosted at *corretto\.aws* and always point to the most recent release of a package\. These links can be used in scripts to pull the latest version of Amazon Corretto 8 \(version 8u232 \)\. For example, to retrieve the latest Linux Corretto 8 \.tgz package by using a Permanent URL, run the following command from the CLI:
+Permanent URLs always point to the most recent release of a package\. For example, to retrieve the latest Linux Corretto 8 \.tgz package by using a Permanent URL, run the following command from the CLI: 
 
 **Example**  
 
