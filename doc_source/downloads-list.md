@@ -1,6 +1,6 @@
 # Downloads for Amazon Corretto 8<a name="downloads-list"></a>
 
-This topic lists all the downloads available for Amazon Corretto 8\. You can choose Permanent URLs pointing to the latest version, or use Version Specific URLs which point to a specific version \.
+This topic lists all the downloads available for Amazon Corretto 8 \(**latest version: 8u232**\)\. You can choose Permanent URLs pointing to the latest version, or use Version Specific URLs which point to a specific version\. 
 
 ## Amazon Corretto 8 Permanent URLs<a name="amazon-corretto-yum-urls"></a>
 
