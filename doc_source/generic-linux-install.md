@@ -19,6 +19,12 @@ To use the Corretto Apt repositories on Debian\-based systems, such as Ubuntu, i
  sudo add-apt-repository 'deb https://apt.corretto.aws stable main'
 ```
 
+If the `add-apt-repository` doesn't work, try:
+
+```
+sudo add-apt-repository 'deb [arch=amd64] https://apt.corretto.aws stable main'
+```
+
 After the repository is added, you can install Corretto 8 by running this command:
 
 **Example**  
