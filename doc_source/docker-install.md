@@ -35,12 +35,12 @@ To use the Corretto ECR instance, first authenticate the docker client to the Co
 
 ## Build a Docker Image with Amazon Corretto 8<a name="docker-build-instruct"></a>
 
- Run the following command to build an image that uses Amazon Corretto 8\. 
+ Run the following command to build an image that uses Amazon Corretto 8\. Select a file from this directory in [repo](https://github.com/corretto/corretto-docker/tree/main/8) depending on which OS you want the base of docker container to be and run the following command replacing the url.
 
 **Example**  
 
 ```
-docker build -t amazon-corretto-8 github.com/corretto/corretto-8-docker
+docker build -t amazon-corretto-8 https://raw.githubusercontent.com/corretto/corretto-docker/main/8/jdk/al2/Dockerfile
 ```
 
  After the command completes, you have an image called *amazon\-corretto\-8*\. 
