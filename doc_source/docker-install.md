@@ -1,10 +1,10 @@
 # Getting Started with Amazon Corretto 8 on Docker Images<a name="docker-install"></a>
 
- This topic describes how to build and launch a Docker image that uses Amazon Corretto 8\. You must have the latest version of Docker installed\. 
+ This topic describes how to build and launch a Docker image that uses Amazon Corretto 8. You must have the latest version of Docker installed\. 
 
 ## Using the official image for Amazon Corretto 8\.<a name="docker-hello-world"></a>
 
- Amazon Corretto 8 is available as an [official image on Docker Hub](https://hub.docker.com/_/amazoncorretto)\. The following example runs a container and displays Corretto's version\. 
+ Amazon Corretto 8 is available as an [official image on Docker Hub](https://hub.docker.com/_/amazoncorretto). The following example runs a container and displays Corretto's version. 
 
 **Example**  
 
@@ -24,14 +24,17 @@ OpenJDK 64-Bit Server VM Corretto-8.232.09.1 (build 25.232-b09, mixed mode)
 
 ## Using the Corretto ECR Instance<a name="amazon-corretto-yum-erc"></a>
 
-To use the Corretto ECR instance, first authenticate the docker client to the Corretto registry \( registry id : 489478819445\) with the help of the instructions in this [page](https://aws.amazon.com/blogs/compute/authenticating-amazon-ecr-repositories-for-docker-cli-with-credential-helper/)\. 
+To get Corretto docker images from Amazon ECR please see [Amazon Corretto's ECR Public Gallery](https://gallery.ecr.aws/amazoncorretto/amazoncorretto) as well as the [Docker Official Images ECR Public Gallery](https://gallery.ecr.aws/docker/library/amazoncorretto) 
 
 **Example**  
 
 ```
- docker pull 489478819445.dkr.ecr.us-west-2.amazonaws.com/corretto8:latest 
- docker run -it 489478819445.dkr.ecr.us-west-2.amazonaws.com/corretto8:latest /bin/bash
+docker pull public.ecr.aws/amazoncorretto/amazoncorretto:latest
+docker run -it public.ecr.aws/amazoncorretto/amazoncorretto:latest /bin/bash/amazoncorretto:latest /bin/bash
 ```
+
+You can see the list of available images by going [here](https://gallery.ecr.aws/amazoncorretto/amazoncorretto).
+
 
 ## Build a Docker Image with Amazon Corretto 8<a name="docker-build-instruct"></a>
 
@@ -45,7 +48,7 @@ docker build -t amazon-corretto-8 github.com/corretto/corretto-8-docker
 
  After the command completes, you have an image called *amazon\-corretto\-8*\. 
 
- To launch this image locally, run the following command\. 
+ To launch this image locally, run the following command. 
 
 **Example**  
 
